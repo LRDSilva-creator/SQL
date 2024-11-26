@@ -1,0 +1,11 @@
+-- Criação da tabela de usuários
+CREATE TABLE usuarios (
+    id INT PRIMARY KEY,  -- Identificador único do usuário
+    nome VARCHAR(100),   -- Nome completo
+    email VARCHAR(100),  -- E-mail do usuário
+    senha VARCHAR(255)   -- Senha criptografada
+);
+
+-- Inserir um usuário de exemplo
+INSERT INTO usuarios (id, nome, email, senha) 
+VALUES (1, 'Lucas Silva', 'XXXXX@exemplo.com', 'senha123');
