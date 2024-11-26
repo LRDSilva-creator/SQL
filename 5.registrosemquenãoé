@@ -1,0 +1,2 @@
+SELECT #NomedoBanco# FROM #NomedaTabela
+where not #NomedaColuna# = '#NomedoRegistro#';
