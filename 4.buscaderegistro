@@ -1,0 +1,2 @@
+SELECT #Bancodedados# FROM #NomedaTabela#
+Where #NomedaColuna# = '#BuscadoRegistro#';
