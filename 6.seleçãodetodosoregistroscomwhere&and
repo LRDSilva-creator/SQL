@@ -1,0 +1,6 @@
+
+Select #NomedoBanco# FROM #NomedaTabela#
+Where
+#NomedaColuna# = '#NomedoRegistro'
+and #NomedaColuna#
+ = '#NomedoRegistro#';  -- É possivel alterar por números , retire as aspas simples;
