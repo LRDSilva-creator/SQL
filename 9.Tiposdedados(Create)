@@ -1,0 +1,10 @@
+-- Tipos de dados:
+
+char(n)                          -- String de tamanho fixo Caracteres
+varchar(n)                       -- String de tamanho variável Caracteres  
+decimal(p,e) / numeric (p,e)     -- Número com precisão e escala fixas("p" representa o número total de digitos;"e" representa o número de casas decimais)
+float / real                     -- número com ponto flutuante
+int/smallint/tinyint/bigint      -- usam dados inteiros.
+Datetime/smalldatetime/timestamp -- Dado que armazena data e hora no mesmo atributo.
+Date                             -- dado para Data
+Time                             -- dado para armazenar Hora.
