@@ -1,0 +1,27 @@
+-- 1. Quais são os funcionários? 
+
+SELECT nome,sobrenome from empregado;
+
+-- 2. Quais são os projetos? 
+
+SELECT cod_proj,nome from projeto;
+
+-- 3. Quais os funcionários que moram no estado do RJ?
+
+SELECT estado,nome from empregado where estado = 'RJ'
+
+-- 4. Qual o maior salário? 
+
+SELECT max(salario) from empregado;
+
+-- 5. Qual a soma dos salários dos funcionários que vivem em SP?
+
+select sum(salario) from empregado where estado = 'SP';
+
+-- 6. Quais são os distintos papéis dos funcionários nos projetos?
+
+SELECT distinct papel_emp from emp_proj;
+
+-- 10. Qual a data de nascimento do empregado mais velho?
+
+SELECT min(datanasc)FROM `empregado`;
