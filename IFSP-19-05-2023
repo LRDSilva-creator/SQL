@@ -1,0 +1,14 @@
+-- O Inner Join retorna os registros que são comuns a duas tabelas.
+
+SELECT * FROM estudantes inner join cursos on 
+estudantes.cursopreferido = cursos.idcurso;
+
+-- O Left Join tem como resultado todos os registros que estão na tabela A (mesmo que não estejam na tabela B) e os registros da tabela B que são comuns à tabela A.
+
+SELECT * FROM estudantes left join cursos
+on estudantes.cursopreferido = cursos.idcurso;
+
+-- O Right Join tem como resultado todos os registros que estão na tabela B (mesmo que não estejam na tabela A) e os registros da tabela A que são comuns à tabela B.
+
+SELECT * from estudantes 
+right join cursos on estudantes.cursopreferido = cursos.idcurso
