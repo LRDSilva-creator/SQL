@@ -1,0 +1,39 @@
+7. -- Liste o nome, sobrenome, o nome do departamento 
+
+select empregado.nome,empregado.sobrenome,departamento.nome,departamento.cod_depto, 
+empregado.cod_depto from departamento inner join empregado on departamento.cod_depto 
+= empregado.cod_depto;
+
+8. -- Liste o nome, nome do meio, sobrenome, o nome do departamento e a função de todos os funcionários nos projetos 
+
+select empregado.nome,empregado.segundo_nome,empregado.sobrenome,departamento.nome,
+departamento.cod_depto,empregado.cod_emp, emp_proj.papel_emp from departamento inner join 
+empregado on departamento.cod_depto = empregado.cod_depto 
+inner join emp_proj on empregado.cod_emp = emp_proj.cod_emp;
+
+9. -- Liste todos os departamentos com seus respectivos gerentes 
+
+select departamento.nome,empregado.nome,empregado.gerente from empregado inner join
+departamento on empregado.cod_depto = departamento.cod_depto where empregado.gerente = 'Sim';
+
+11. -- Liste os departamentos dos funcionários que têm a função de “Desenvolvedor” nos Projetos
+
+select departamento.nome,empregado.nome,empregado.cod_depto,emp_proj.cod_emp from departamento
+inner join empregado on departamento.cod_depto = empregado.cod_depto inner join emp_proj on empregado.cod_emp 
+= emp_proj.cod_emp where papel_emp = 'Desenvolvedor';
+
+12. -- Liste o nome do departamento e do funcionário ordenados por departamento e funcionário 
+
+select departamento.nome , empregado.nome,empregado.segundo_nome,empregado.sobrenome from empregado
+inner join departamento on empregado.cod_depto = departamento.cod_depto where departamento.cod_depto
+= empregado.cod_depto order by departamento.nome ,empregado.nome,empregado.segundo_nome,empregado.sobrenome;
+
+13. -- Liste os nomes dos funcionários que moram em Guarulhos e que exerçam a função de “Analista”
+
+select empregado.nome,empregado.cidade,emp_proj.cod_emp from empregado inner join emp_proj on empregado.cod_emp
+= emp_proj.cod_emp where emp_proj.papel_emp = 'Analista' and empregado.cidade = 'Guarulhos';
+
+14. -- Liste os nomes dos funcionários que trabalham no departamento Recursos Humanos
+
+select empregado.nome,empregado.segundo_nome,empregado.sobrenome from empregado inner join departamento
+on empregado.cod_depto = departamento.cod_depto where departamento.nome = 'Recursos Humanos';
