@@ -1,0 +1,1 @@
+DELETE FROM #NomedaTabela# WHERE '#NomedaColuna#'= #NomedoRegistro#; 
