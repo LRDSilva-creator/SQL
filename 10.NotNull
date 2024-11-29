@@ -1,0 +1,5 @@
+create table #NomedaTabela#
+
+#NomedaColuna# #TipodeVariável# NOT NULL,
+#NomedaColuna# #TipodeVariável# NOT NULL
+);
