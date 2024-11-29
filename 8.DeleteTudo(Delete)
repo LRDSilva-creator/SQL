@@ -1,0 +1,1 @@
+DELETE FROM #NomedaTabela#; -- Exluir todos os registros da tabela
